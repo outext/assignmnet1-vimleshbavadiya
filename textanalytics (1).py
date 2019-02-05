@@ -15,15 +15,17 @@ def download(g):
     """ This function downloads the json data from the url."""
     response = requests.get(url)
     soup = BeautifulSoup(response.content, "html.parser")
-    tags = soup.find_all(tag that you want to parse through)
+    print (soup)
+    """tags = soup.find_all(tag that you want to parse through)"""
     # TODO add code here
-    return (total)
+    #total = 1
+    return (soup)
 
 
 def tokenize(a):
     """ This function downloads gives you tokenized words ."""
-    return[]
-
+    Tokens = word_tokenize(a) 
+    return[Tokens]
 
 def stopw(b):
     """ This function should remove the stopwords from the input given to function"""
